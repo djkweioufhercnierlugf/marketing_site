@@ -788,11 +788,17 @@
             background: rgba(255, 255, 255, 0.02);
         }
 
-        .client-grid {
+                .client-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 60px;
+        }
+
+        @media (min-width: 1024px) {
+            .client-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         .client-card {
@@ -1031,6 +1037,38 @@
 
         .footer-section a:hover::before {
             opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .social-links a::before {
+            content: none;
+        }
+
+        .social-links a:hover {
+            background: linear-gradient(135deg, #FF4400, #FF8800);
+            border-color: #FF4400;
+            color: white;
+            transform: translateY(-3px);
+            padding: 0;
         }
 
         .footer-bottom {
@@ -1465,111 +1503,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-video">
-                        <img
-                            src="media/placeholder.png"
-                            alt="Client testimonial preview"
-                            style="width: 100%; height: 110%; border-radius: 15px 15px 0 0; object-fit: cover; display: block;">
-                    </div>
-                    <div class="case-study-info">
-                        <h3 class="case-study-title">Head On Customs Success!</h3>
-                        <p class="case-study-description">We've managed to add on around 4-7k onto Head On Customs calendar every month because of our systems! Bringing in only luxury clients only willing to spend upwards of £600+! Our systems work for high quality luxury companies as well!</p>
-                        <div class="case-study-stats">
-                            <div class="case-study-stat">
-                                <div class="case-study-stat-number">+79%</div>
-                                <div class="case-study-stat-label">Increase in Recognition</div>
-                            </div>
-                            <div class="case-study-stat">
-                                <div class="case-study-stat-number">£4-7K</div>
-                                <div class="case-study-stat-label">Increase in Bookings</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-study-video">
-                        <video 
-                            width="100%" 
-                            height="110%" 
-                            controls 
-                            controlslist="nofullscreen nodownload noremoteplayback"
-                            playsinline
-                            style="border-radius: 15px 15px 0 0; object-fit: cover;">
-                            <source src="media/lighting_customize.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="case-study-info">
-                        <h3 class="case-study-title">Lighting Customise Growth!</h3>
-                        <p class="case-study-description">By working with us Lighting Customise has been able to employ workers for himself! We helped by adding on average around 5-8k per month every month from our unique sales and lead generation systems!</p>
-                        <div class="case-study-stats">
-                            <div class="case-study-stat">
-                                <div class="case-study-stat-number">£5-8K</div>
-                                <div class="case-study-stat-label">Monthly Addition</div>
-                            </div>
-                            <div class="case-study-stat">
-                                <div class="case-study-stat-number">New Staff</div>
-                                <div class="case-study-stat-label">Business Growth</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features fade-in-section" id="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Auto Elevate?</h2>
-                <p class="section-subtitle">We specialize exclusively in window tinting and auto styling - nothing else</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="feature-title">Niche Expertise</h3>
-                    <p class="feature-description">We only work with window tinters and auto stylers in the UK and US. Our deep industry knowledge means better results for you.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h3 class="feature-title">Quality Leads</h3>
-                    <p class="feature-description">Cheaper, faster to close, and more reliable than Google or YouTube ads. Our leads are motivated and ready to buy.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="feature-title">Untapped Platform</h3>
-                    <p class="feature-description">Meta ads offer huge opportunities for early adopters in the auto styling niche. Get ahead of your competition.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="feature-title">Performance Guarantee</h3>
-                    <p class="feature-description">We don't get you the work, you don't pay. Simple as that. Your success is our success.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="feature-title">Fast Results</h3>
-                    <p class="feature-description">Start seeing qualified leads within days, not months. Our proven system delivers predictable growth.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3 class="feature-title">Consistent Pipeline</h3>
-                    <p class="feature-description">Build a steady stream of customers without the feast-or-famine cycle of traditional marketing.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -1579,94 +1512,60 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Who We Help</h2>
-                <p class="section-subtitle">Meet the businesses we've helped transform with Meta ads</p>
+                <p class="section-subtitle">We specialize in helping UK-based auto styling businesses scale through targeted advertising</p>
             </div>
             <div class="client-grid">
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/dh_styling_logo.png" alt="DH Styling logo"></div>
-                    <h3 class="client-name">DH Styling</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Full-service auto customization specialist offering window tinting, wrapping, interior lighting, remapping, Apple CarPlay units, custom steering wheels, digital dashes, and complete vehicle transformations.</p>
+                    <div class="client-name">Window Tinting Shops</div>
+                    <p class="client-description">From small independent shops to multi-location operations, we help window tinting businesses dominate their local markets with targeted lead generation.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We helped and currently help DH Styling add on between 7-10k per month every month with 127% lead increase.</p>
+                        <h4>Typical Results:</h4>
+                        <p>30-50 qualified leads per month, 3-5x ROI within 60 days</p>
                     </div>
                 </div>
 
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/delta_logo.png" alt="Delta Auto Styling logo"></div>
-                    <h3 class="client-name">Delta Auto Styling</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Full-service auto styling shop specializing in window tinting, paint protection, and vehicle wraps.</p>
+                    <div class="client-name">Auto Detailing Specialists</div>
+                    <p class="client-description">We work with premium detailing shops looking to attract high-value clients seeking paint correction, ceramic coatings, and full detailing packages.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>From struggling to thriving - delivered 150+ high-quality leads with a 4.2x ROI, completely transforming their business.</p>
+                        <h4>Typical Results:</h4>
+                        <p>20-30 premium leads monthly, average ticket increase of £150-300</p>
                     </div>
                 </div>
 
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/mq_logo.jpg" alt="MQ Styling logo"></div>
-                    <h3 class="client-name">MQ Styling</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Expert auto styling service specializing in body kits, interior lighting customization, and professional window tinting for luxury and performance vehicles.</p>
+                    <div class="client-name">Vehicle Wrapping Businesses</div>
+                    <p class="client-description">Perfect for businesses offering vinyl wraps, PPF, and custom graphics. We help you reach car enthusiasts and commercial clients.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We help MQ Styling add between 4-6k per month in extra bookings from our ad strategy with 212% growth rate in just 30 days.</p>
+                        <h4>Typical Results:</h4>
+                        <p>15-25 wrap inquiries per month, 40-60% conversion rate</p>
                     </div>
                 </div>
 
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/bmt_logo.png" alt="BMT Customs logo"></div>
-                    <h3 class="client-name">BMT Customs</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Premium automotive customization specialist focusing on interior lighting installations, custom wraps, window tinting, and bespoke vehicle modifications.</p>
+                    <div class="client-name">Custom Auto Shops</div>
+                    <p class="client-description">For shops offering multiple services like tinting, wraps, detailing, and customization. We help you showcase your full service range.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We help BMT add on between 5-8k per month from running interior lighting ads and dealing with leads through our advanced sales systems, achieving 90% revenue growth.</p>
+                        <h4>Typical Results:</h4>
+                        <p>50-80 mixed leads monthly across all services</p>
                     </div>
                 </div>
 
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/kustom_logo.png" alt="Kustom Karz logo"></div>
-                    <h3 class="client-name">Kustom Karz</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Premium auto customization service specializing in unique vehicle transformations and high-end styling solutions.</p>
+                    <div class="client-name">Mobile Tinting Services</div>
+                    <p class="client-description">We specialize in helping mobile tinting operations reach customers who value convenience. Perfect for targeting busy professionals and fleet operators.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We took Kustom Karz from an average turnover of 5k per month to upwards of 12k recurring revenue per month, now booked out 2 weeks with 197% lead quality improvement.</p>
+                        <h4>Typical Results:</h4>
+                        <p>25-40 mobile bookings monthly, reduced no-show rates</p>
                     </div>
                 </div>
 
                 <div class="client-card">
-                    <div class="client-logo"><img src="media/cs_logo.jpg" alt="CJ Auto Worx logo"></div>
-                    <h3 class="client-name">CJ Auto Worx</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Comprehensive auto customization expert offering interior lighting, ECU remapping, Apple CarPlay installations, custom steering wheels, digital dashboard upgrades, and full-service vehicle styling solutions.</p>
+                    <div class="client-name">Automotive Lighting Specialists</div>
+                    <p class="client-description">Targeting car enthusiasts looking for headlight tinting, LED upgrades, and custom lighting solutions with precision-targeted campaigns.</p>
                     <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We took this client from 5-6k months to now adding on average 5-9k per month and have hit record 19k months from our killer systems.</p>
-                    </div>
-                </div>
-
-                <div class="client-card">
-                    <div class="client-logo"><img src="media/hoc_logi.jpg" alt="Head On Customs logo"></div>
-                    <h3 class="client-name">Head On Customs</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">High-end luxury vehicle customization specialist serving premium clients seeking exclusive automotive transformations.</p>
-                    <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>We've managed to add on around 4-7k onto their calendar every month, bringing in only luxury clients willing to spend upwards of £600+, achieving 79% increase in recognition.</p>
-                    </div>
-                </div>
-
-                <div class="client-card">
-                    <div class="client-logo"><img src="media/lighting_customize_logo.jpg" alt="Lighting Customise logo"></div>
-                    <h3 class="client-name">Lighting Customise</h3>
-                    <p class="client-location">United Kingdom</p>
-                    <p class="client-description">Specialist automotive lighting customization service offering unique interior and exterior lighting solutions.</p>
-                    <div class="client-results">
-                        <h4>How We Helped:</h4>
-                        <p>By working with us, Lighting Customise has been able to employ workers for himself! We helped by adding on average around 5-8k per month from our unique sales and lead generation systems.</p>
+                        <h4>Typical Results:</h4>
+                        <p>20-35 lighting project leads monthly, high-margin work</p>
                     </div>
                 </div>
             </div>
@@ -1683,51 +1582,61 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>What makes Meta ads better than Google or YouTube ads for auto styling businesses?</span>
+                        How quickly will I see results?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Meta ads allow us to target customers based on their interests, behaviors, and demographics with incredible precision. Unlike Google ads where people are actively searching (meaning high competition), Meta ads put your business in front of potential customers before they even start looking - at a much lower cost per lead. It's an untapped platform in the auto styling niche with huge opportunities.
+                        Most clients start seeing qualified leads within the first 7-14 days of launching their campaigns. Full optimization and consistent lead flow typically occurs by day 30-45. We guarantee results within 90 days or you don't pay.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you only work with window tinters and auto stylers?</span>
+                        What makes you different from other marketing agencies?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes, absolutely. We specialize exclusively in window tinting and auto styling businesses in the UK and US. This narrow focus means we understand your industry inside and out - the customer journey, pricing expectations, seasonal trends, and what messaging converts. We don't dilute our expertise by working with other industries.
+                        We exclusively serve the auto styling industry. This specialization means we understand your customers, your competition, and what works. We also provide end-to-end service including ad management, lead follow-up systems, and sales support - not just clicks.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>How quickly can I expect to see results?</span>
+                        Do I need a big advertising budget to get started?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Most clients start seeing qualified leads within the first 7-14 days of launching campaigns. However, we optimize continuously, and results typically improve significantly over the first 60-90 days as we refine targeting and messaging based on real data from your market.
+                        No. We work with businesses at all stages. Recommended minimum ad spend is £500-1000/month, but we can start smaller and scale up as you see results. Our focus is on ROI, not spending more money.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>How much should I budget for Meta ads?</span>
+                        What kind of support do you provide?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        We typically recommend a minimum ad spend of £500-£2,000 per month to gather sufficient data and generate meaningful results. However, the exact amount depends on your market, goals, and capacity. During your strategy call, we'll discuss a budget that makes sense for your specific situation.
+                        You get a dedicated account manager, weekly performance reports, monthly strategy calls, 24/7 access to your campaign dashboard, and our team handles all lead follow-up. We're partners in your growth, not just service providers.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do I need to handle the leads myself?</span>
+                        Do you work with businesses outside the UK?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        We can handle lead management for most clients with our sales team and in-house systems, or we can provide qualified leads directly to you. The choice is yours based on your preference and capacity.
+                        Currently, we focus exclusively on UK-based auto styling businesses. This allows us to provide the most relevant and effective campaigns for your market. If you're outside the UK, feel free to reach out and we can discuss options.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's your guarantee?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Simple: if we don't generate qualified leads and positive ROI within 90 days, you don't pay for our services. We're confident in our system because it's been proven with dozens of auto styling businesses just like yours.
                     </div>
                 </div>
             </div>
@@ -1739,7 +1648,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Scale Your Auto Styling Business?</h2>
-                <p>Book a free strategy call and discover how Meta ads can transform your business</p>
+                <p>Book a free strategy call and discover how we can help you generate more qualified leads</p>
                 <a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank" class="cta-btn">Book Your Free Strategy Call</a>
             </div>
         </div>
@@ -1751,23 +1660,40 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Auto Elevate Marketing</h3>
-                    <p style="color: rgba(255, 255, 255, 0.6); margin-top: 10px;">Specialized Meta Ads for Window Tinters & Auto Stylers</p>
+                    <p>Helping UK auto styling businesses scale through proven Meta advertising strategies.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/reubenbaker._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61558371134911" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:reuben@autoelevatemarketing.net" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="#services">Services</a>
+                    <h3>Services</h3>
+                    <a href="#services">Meta Ads Management</a>
+                    <a href="#services">Google SEO</a>
+                    <a href="#services">Lead Follow-Up Systems</a>
+                    <a href="#services">Website Design</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
                     <a href="#case-studies">Case Studies</a>
                     <a href="#who-we-help">Who We Help</a>
                     <a href="#faq">FAQs</a>
+                    <a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank">Book a Call</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Get Started</h3>
-                    <a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank">Book Strategy Call</a>
-                    <a href="#video">Watch Demo</a>
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:reuben@autoelevatemarketing.net" style="display: inline;">reuben@autoelevatemarketing.net</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Auto Elevate Marketing. All rights reserved.</p>
+                <p>&copy; 2025 Auto Elevate Marketing. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1805,46 +1731,46 @@
             }
         });
 
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const wasActive = faqItem.classList.contains('active');
-                
-                // Close all FAQ items
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                });
-                
-                // Open clicked item if it wasn't active
-                if (!wasActive) {
-                    faqItem.classList.add('active');
-                }
-            });
-        });
-
-        // Scroll to Top Button
-        const scrollToTop = document.getElementById('scrollToTop');
-
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                scrollToTop.classList.add('visible');
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('visible');
             } else {
-                scrollToTop.classList.remove('visible');
+                scrollToTopBtn.classList.remove('visible');
             }
         });
 
-        scrollToTop.addEventListener('click', () => {
+        scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
 
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
         // Intersection Observer for fade-in animations
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1855,23 +1781,20 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-in-section').forEach(section => {
+        fadeInSections.forEach(section => {
             observer.observe(section);
         });
 
-        // Smooth scroll for anchor links
+        // Add smooth scroll behavior for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href.length > 1) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
