@@ -46,6 +46,9 @@
   <!-- ── STYLESHEET ── -->
   <link rel="stylesheet" href="marketing.css">
   <style>
+    /* Ensure fade-in elements are always visible as fallback */
+    .fade-in { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+
     @media (max-width: 768px) {
       #ecom > div > div { grid-template-columns: 1fr !important; gap: 40px !important; }
       /* Website upsell section — fix grid and feature boxes on mobile */
@@ -978,7 +981,11 @@
         if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
       });
     }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+      // Fallback: mark visible after 1s in case observer doesn't fire
+      setTimeout(() => { el.classList.add('visible'); }, 800);
+    });
 
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
