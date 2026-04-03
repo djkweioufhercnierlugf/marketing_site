@@ -48,6 +48,39 @@
   <style>
     @media (max-width: 768px) {
       #ecom > div > div { grid-template-columns: 1fr !important; gap: 40px !important; }
+      /* Website upsell section — fix grid and feature boxes on mobile */
+      section[aria-labelledby="upsell-heading"] { padding: 60px 20px !important; }
+      section[aria-labelledby="upsell-heading"] > div > div {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+      }
+      section[aria-labelledby="upsell-heading"] > div > div > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+      }
+      section[aria-labelledby="upsell-heading"] > div > div > div:last-child > div {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+        padding: 16px 18px !important;
+        border-radius: 14px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+      }
+      section[aria-labelledby="upsell-heading"] > div > div > div:last-child > div > div:first-child {
+        flex-shrink: 0 !important;
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+      }
+      section[aria-labelledby="upsell-heading"] > div > div > div:last-child > div > div:last-child strong {
+        font-size: 0.85rem !important;
+      }
+      section[aria-labelledby="upsell-heading"] > div > div > div:last-child > div > div:last-child span {
+        font-size: 0.78rem !important;
+      }
     }
   </style>
 
@@ -896,7 +929,7 @@
         <div class="footer-brand">
           <div class="logo">Auto Elevate <span>Marketing</span></div>
           <p>Helping UK auto styling businesses scale through proven Meta advertising strategies and automated lead systems.</p>
-          <p class="footer-contact">Email: <a href="mailto:autoelevatemarketing@gmail.com">autoelevatemarketing@gmail.com</a></p>
+          <p class="footer-contact">Email: <a href="/cdn-cgi/l/email-protection#7b1a0e0f141e171e0d1a0f1e161a09101e0f12151c3b1c161a121755181416"><span class="__cf_email__" data-cfemail="5a3b2f2e353f363f2c3b2e3f373b28313f2e33343d1a3d373b333674393537">[email&#160;protected]</span></a></p>
           <p class="footer-contact">Phone: <a href="tel:+447984164704">07984 164704</a></p>
           <p class="footer-contact">Sales (UK): <a href="tel:+447488894398">+44 7488 894398</a></p>
           <p class="footer-contact">Sales (US): <a href="tel:+18445152356">(844) 515-2356</a></p>
@@ -939,7 +972,7 @@
   </footer>
 
   <!-- ── SCRIPTS ── -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
@@ -1053,14 +1086,4 @@
     document.querySelectorAll('.faq-q').forEach(q => {
       q.addEventListener('click', () => {
         const item = q.closest('.faq-item');
-        item.classList.toggle('open');
-        q.setAttribute('aria-expanded', item.classList.contains('open'));
-      });
-      q.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
-      });
-    });
-  </script>
-
-</body>
-</html>
+        item.classList.toggle('op
