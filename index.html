@@ -689,8 +689,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/dh_styling_logo.png"
-                   alt="DH Styling logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/dh_styling_logo.png" alt="DH Styling logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>DH Styling</h4>
             <p class="who-location">Ely, Cambridgeshire</p>
@@ -703,8 +702,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/delta_logo.png"
-                   alt="Delta Auto Styling logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/delta_logo.png" alt="Delta Auto Styling logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>Delta Auto Styling</h4>
             <p class="who-location">Glasgow, Scotland</p>
@@ -717,8 +715,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/lightnetic.jpeg"
-                   alt="Lightnetic Customs logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/lightnetic.jpeg" alt="Lightnetic Customs logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>Lightnetic Customs</h4>
             <p class="who-location">United Kingdom</p>
@@ -731,8 +728,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/bmt_logo.png"
-                   alt="BMT Customs logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/bmt_logo.png" alt="BMT Customs logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>BMT Customs</h4>
             <p class="who-location">Edinburgh, Scotland</p>
@@ -745,8 +741,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/kustom_logo.png"
-                   alt="Kustom Karz logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/kustom_logo.png" alt="Kustom Karz logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>Kustom Karz</h4>
             <p class="who-location">Birmingham</p>
@@ -759,8 +754,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/cs_logo.jpg"
-                   alt="CJ Auto Worx logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/cs_logo.jpg" alt="CJ Auto Worx logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>CJ Auto Worx</h4>
             <p class="who-location">Manchester</p>
@@ -773,8 +767,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/hoc_logi.jpg"
-                   alt="Head On Customs logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/hoc_logi.jpg" alt="Head On Customs logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>Head On Customs</h4>
             <p class="who-location">Bristol</p>
@@ -787,8 +780,7 @@
 
           <div class="who-card fade-in">
             <div class="who-logo-wrap">
-              <img src="media/lighting_customize_logo.jpg"
-                   alt="Lighting Customise logo" class="who-logo" loading="lazy" width="80" height="80">
+              <img src="media/lighting_customize_logo.jpg" alt="Lighting Customise logo" class="who-logo" loading="lazy" width="80" height="80">
             </div>
             <h4>Lighting Customise</h4>
             <p class="who-location">United Kingdom</p>
@@ -908,7 +900,7 @@
         <div class="footer-brand">
           <div class="logo">Auto Elevate <span>Marketing</span></div>
           <p>Helping UK auto styling businesses scale through proven Meta advertising strategies and automated lead systems.</p>
-          <p class="footer-contact">Email: <a href="/cdn-cgi/l/email-protection#7b1a0e0f141e171e0d1a0f1e161a09101e0f12151c3b1c161a121755181416"><span class="__cf_email__" data-cfemail="5a3b2f2e353f363f2c3b2e3f373b28313f2e33343d1a3d373b333674393537">autoelevatemarketing@gmail.com</span></a></p>
+          <p class="footer-contact">Email: <a href="mailto:autoelevatemarketing@gmail.com">autoelevatemarketing@gmail.com</a></p>
           <p class="footer-contact">Phone: <a href="tel:+447984164704">07984 164704</a></p>
           <p class="footer-contact">Sales (UK): <a href="tel:+447488894398">+44 7488 894398</a></p>
           <p class="footer-contact">Sales (US): <a href="tel:+18445152356">(844) 515-2356</a></p>
@@ -951,7 +943,8 @@
   </footer>
 
   <!-- ── SCRIPTS ── -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
+    // ── Fade-in observer ──
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
@@ -959,10 +952,10 @@
     }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => {
       observer.observe(el);
-      // Fallback: mark visible after 1s in case observer doesn't fire
       setTimeout(() => { el.classList.add('visible'); }, 800);
     });
 
+    // ── Mobile hamburger ──
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     hamburger.addEventListener('click', () => {
@@ -977,6 +970,7 @@
       });
     });
 
+    // ── Nav brand switcher ──
     const switcherBtn = document.getElementById('switcher-btn');
     const switcherDropdown = document.getElementById('switcher-dropdown');
     switcherBtn.addEventListener('click', (e) => {
@@ -993,6 +987,7 @@
       }
     });
 
+    // ── YouTube facade ──
     const ytFacade = document.getElementById('yt-facade');
     if (ytFacade) {
       const loadYT = () => {
@@ -1009,6 +1004,7 @@
       ytFacade.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') loadYT(); });
     }
 
+    // ── Video wrap click-to-play ──
     document.querySelectorAll('.video-wrap[data-src]').forEach(wrap => {
       wrap.style.cursor = 'pointer';
       wrap.addEventListener('click', () => {
@@ -1020,13 +1016,13 @@
         video.muted = false;
         video.playsinline = true;
         video.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000;z-index:10;';
-        // Hide everything inside wrap except the new video
         Array.from(wrap.children).forEach(c => c.style.display = 'none');
         wrap.appendChild(video);
         video.play().catch(() => {});
       });
     });
 
+    // ── Thumbnail observer ──
     const thumbObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -1068,7 +1064,21 @@
     }, { rootMargin: '200px' });
     document.querySelectorAll('.video-wrap[data-src]').forEach(wrap => { thumbObserver.observe(wrap); });
 
+    // ── FAQ accordion (FIXED) ──
     document.querySelectorAll('.faq-q').forEach(q => {
       q.addEventListener('click', () => {
         const item = q.closest('.faq-item');
-        item.classList.toggle('op
+        const isOpen = item.classList.toggle('open');
+        q.setAttribute('aria-expanded', isOpen);
+      });
+      q.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          q.click();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
