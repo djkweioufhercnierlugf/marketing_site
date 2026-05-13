@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="avellaagency-removebg-preview.ico" type="image/x-icon">
+
+  <!-- ── PRIMARY SEO ── -->
+  <title>Careers | Auto Elevate Marketing</title>
+  <meta name="description" content="We're hiring car enthusiasts who love sales and want to help UK auto styling businesses scale. Join Auto Elevate Marketing.">
+  <meta name="author" content="Auto Elevate Marketing">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.autoelevatemarketing.uk/careers">
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.autoelevatemarketing.uk/careers">
+  <meta property="og:title"       content="Careers | Auto Elevate Marketing">
+  <meta property="og:description" content="We're hiring car enthusiasts who love sales and want to help UK auto styling businesses scale.">
+  <meta property="og:locale"      content="en_GB">
+  <meta property="og:site_name"   content="Auto Elevate Marketing">
+
+  <!-- ── THEME ── -->
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- ── FONTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
+
+  <!-- ── STYLESHEET ── -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    /* ── HERO ── */
+    .careers-hero {
+      position: relative;
+      padding: 160px 24px 100px;
+      background: var(--black);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .careers-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0e05 50%, #0f0a03 100%);
+      pointer-events: none;
+    }
+
+    .careers-hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .careers-hero-bg::after {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(249,115,22,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .careers-hero .container { position: relative; z-index: 1; }
+    .careers-hero .section-tag { margin-bottom: 20px; display: inline-block; }
+
+    .careers-hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .careers-hero h1 span { color: var(--accent-light); }
+
+    .careers-hero .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 560px;
+      margin: 0 auto 48px;
+      line-height: 1.7;
+    }
+
+    .careers-hero .hero-sub strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+
+    /* Stats bar */
+    .hero-stats-row {
+      display: flex;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      max-width: 680px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .hstat {
+      flex: 1;
+      min-width: 130px;
+      padding: 20px 28px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hstat:last-child { border-right: none; }
+
+    .hstat-val {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .hstat-lbl {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── CAR BANNER ── */
+    .car-banner {
+      background: rgba(249,115,22,0.07);
+      border: 1px solid rgba(249,115,22,0.2);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+
+    .car-banner h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 10px;
+    }
+
+    .car-banner p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      max-width: 780px;
+    }
+
+    .car-banner p strong { color: var(--white); font-weight: 500; }
+
+    .ktags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .kt {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.25);
+      color: var(--accent-light);
+    }
+
+    /* ── ROLES ── */
+    .roles-list { display: flex; flex-direction: column; gap: 2px; }
+
+    .role-card {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 28px;
+      text-decoration: none;
+      color: var(--white);
+      transition: background 0.22s, border-color 0.22s, transform 0.18s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .role-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 3px;
+      background: var(--accent);
+      border-radius: 3px 0 0 3px;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.3s ease;
+    }
+
+    .role-card:hover {
+      background: #161616;
+      border-color: rgba(255,255,255,0.13);
+      transform: translateY(-1px);
+    }
+
+    .role-card:hover::before { transform: scaleY(1); }
+
+    .role-dept {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .role-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .role-desc {
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      max-width: 600px;
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+
+    .role-needs {
+      font-size: 0.825rem;
+      color: rgba(255,255,255,0.38);
+      max-width: 600px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .role-needs strong { color: var(--accent); font-weight: 600; }
+
+    .role-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+    .role-tag {
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.09);
+      color: rgba(255,255,255,0.38);
+    }
+
+    .role-tag.hi {
+      border-color: rgba(249,115,22,0.25);
+      color: rgba(249,115,22,0.8);
+    }
+
+    .role-arrow {
+      flex-shrink: 0;
+      margin-top: 4px;
+      color: var(--accent);
+      opacity: 0.7;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .role-card:hover .role-arrow { transform: translateX(5px); opacity: 1; }
+
+    /* ── PERKS ── */
+    .perks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+    }
+
+    .perk-card {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 28px 24px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .perk-card:hover {
+      background: #161616;
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    .perk-icon-wrap {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .perk-icon-wrap svg { stroke: var(--accent); }
+
+    .perk-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .perk-body {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.65;
+    }
+
+    /* ── VALUES ── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .value-card { border-top: 1px solid rgba(255,255,255,0.09); padding-top: 24px; }
+
+    .value-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgba(249,115,22,0.18);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .value-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .value-body {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.65;
+    }
+
+    /* ── PROCESS ── */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2px;
+      margin-top: 48px;
+    }
+
+    .process-step {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+
+    .step-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .step-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .step-body {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.65;
+    }
+
+    /* ── CTA BAND ── */
+    .careers-cta {
+      background: linear-gradient(135deg, #111 0%, #1a0e05 100%);
+      border-top: 1px solid rgba(249,115,22,0.15);
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .careers-cta h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.5px;
+      max-width: 680px;
+      margin: 0 auto 16px;
+    }
+
+    .careers-cta p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.45);
+      max-width: 440px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .careers-cta .cta-btns { justify-content: center; }
+
+    .careers-cta small {
+      display: block;
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.22);
+    }
+
+    .careers-cta small a { color: var(--accent-light); }
+
+    /* ── SECTION DARK ── */
+    .section-dark { background: #0d0d0d; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .careers-hero { padding: 120px 20px 72px; }
+      .hstat { min-width: 120px; }
+      .role-card { flex-direction: column; gap: 16px; }
+      .role-arrow { display: none; }
+      .perks-grid,
+      .values-grid,
+      .process-grid { grid-template-columns: 1fr; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Auto Elevate Marketing — Home">
+          Auto Elevate <span>Marketing</span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#results">Results</a></li>
+          <li><a href="index.html#who-we-help">Who We Help</a></li>
+          <li><a href="index.html#faq">FAQs</a></li>
+          <li><a href="careers.html" style="color: var(--white);">Careers</a></li>
+
+          <li class="nav-switcher">
+            <button class="nav-switcher-btn" id="switcher-btn" aria-expanded="false" aria-haspopup="true">
+              Our Brands
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="nav-switcher-dropdown" id="switcher-dropdown" role="menu">
+              <a href="index.html" class="nav-switcher-item" role="menuitem">
+                <span class="switcher-dot orange"></span>
+                <span class="switcher-label">
+                  <strong>Auto Elevate Marketing</strong>
+                  <span>Meta Ads &amp; Lead Generation</span>
+                </span>
+              </a>
+              <a href="services.html" class="nav-switcher-item" role="menuitem">
+                <span class="switcher-dot blue"></span>
+                <span class="switcher-label">
+                  <strong>Auto Elevate Websites</strong>
+                  <span>Professional Website Design</span>
+                </span>
+              </a>
+            </div>
+          </li>
+
+          <li><a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank" rel="noopener noreferrer" class="nav-cta">Book a Call</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <ul class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#results">Results</a></li>
+        <li><a href="index.html#who-we-help">Who We Help</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><div class="mobile-divider">Switch Brand</div></li>
+        <li><a href="index.html">&#8627; Auto Elevate Marketing</a></li>
+        <li><a href="services.html">&#8627; Auto Elevate Websites</a></li>
+        <li><a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank" rel="noopener noreferrer">Book a Call</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════
+         HERO
+    ══════════════════════════════ -->
+    <section class="careers-hero" aria-labelledby="careers-heading">
+      <div class="careers-hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <span class="section-tag">We're Hiring</span>
+        <h1 id="careers-heading">Join the team<br>built for <span>car people.</span></h1>
+        <p class="hero-sub">We're not a generic agency. We help UK auto styling businesses scale with Meta Ads and lead systems — and we want people who <strong>genuinely love the industry</strong> to help us do it.</p>
+        <div class="hero-stats-row" role="list">
+          <div class="hstat" role="listitem">
+            <div class="hstat-val">100%</div>
+            <div class="hstat-lbl">Remote</div>
+          </div>
+          <div class="hstat" role="listitem">
+            <div class="hstat-val">3</div>
+            <div class="hstat-lbl">Open Roles</div>
+          </div>
+          <div class="hstat" role="listitem">
+            <div class="hstat-val">Fast</div>
+            <div class="hstat-lbl">4-Step Process</div>
+          </div>
+          <div class="hstat" role="listitem">
+            <div class="hstat-val">Paid</div>
+            <div class="hstat-lbl">Trial Task</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         OPEN ROLES
+    ══════════════════════════════ -->
+    <section class="section" id="roles" aria-labelledby="roles-heading">
+      <div class="container">
+        <span class="section-tag fade-in">Open Positions</span>
+        <h2 class="section-title fade-in" id="roles-heading">Find your role.</h2>
+        <p class="section-sub fade-in" style="margin-bottom: 40px;">All roles are remote and built around results — not hours. Car knowledge isn't always required, but it's always rewarded.</p>
+
+        <div class="car-banner fade-in" role="note">
+          <h3>Why we care about car knowledge</h3>
+          <p>Our clients are window tinters, wrappers, detailers, and ambient lighting specialists. If you already <strong>get the culture</strong> — the forums, the installs, the community — your outreach lands differently. Businesses can tell within seconds whether someone understands what they do. That context makes every role here more effective.</p>
+          <div class="ktags">
+            <span class="kt">Window Tinting</span>
+            <span class="kt">PPF &amp; Wraps</span>
+            <span class="kt">Ceramic Coating</span>
+            <span class="kt">Detailing</span>
+            <span class="kt">Ambient Lighting</span>
+            <span class="kt">UK Car Scene</span>
+          </div>
+        </div>
+
+        <div class="roles-list" role="list">
+
+          <a class="role-card fade-in" href="mailto:autoelevatemarketing@gmail.com?subject=Application — Meta Ads Manager" role="listitem">
+            <div>
+              <div class="role-dept">Performance Marketing</div>
+              <div class="role-name">Meta Ads Manager</div>
+              <p class="role-desc">You'll run and scale Meta Ads campaigns for our UK auto styling clients — window tinters, wrappers, detailers. You'll own the numbers: cost per lead, ROAS, conversion rates. If campaigns aren't performing, you diagnose and fix fast. This is a hands-on, high-ownership role.</p>
+              <p class="role-needs">
+                <strong>Must have:</strong> Proven Meta Ads experience, understanding of direct-response advertising, ability to read data and optimise fast, strong creative instincts.<br>
+                <strong>Big plus:</strong> You're already in the car scene — you know the difference between a tint job and a wrap, you follow shops on Instagram, you understand the customer. That context makes better ads.
+              </p>
+              <div class="role-tags">
+                <span class="role-tag hi">Remote</span>
+                <span class="role-tag">Full-Time</span>
+                <span class="role-tag">Base + Performance Bonus</span>
+                <span class="role-tag hi">Car Knowledge = Big Advantage</span>
+              </div>
+            </div>
+            <div class="role-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+
+          <a class="role-card fade-in" href="mailto:autoelevatemarketing@gmail.com?subject=Application — Lead Follow-Up Closer / Client Account Manager" role="listitem">
+            <div>
+              <div class="role-dept">Sales &amp; Client Success</div>
+              <div class="role-name">Lead Follow-Up Closer / Client Account Manager</div>
+              <p class="role-desc">You'll be turning warm leads into booked appointments for our clients — and keeping those clients happy, retained, and scaling. Half closer, half relationship manager. Natural on the phone, confident handling objections, and genuinely good with people.</p>
+              <p class="role-needs">
+                <strong>Must have:</strong> Strong sales and communication skills, comfortable on the phone, organised follow-up, ability to handle objections without sounding scripted. Sales background in automotive, trades, or local services is a massive advantage.<br>
+                <strong>Big plus:</strong> If a lead asks whether PPF is worth it on a leased car, you can actually have that conversation. If a client mentions ceramic tint vs dyed film, you know what they mean. Automotive knowledge turns good salespeople into great ones in this niche.
+              </p>
+              <div class="role-tags">
+                <span class="role-tag hi">Remote</span>
+                <span class="role-tag">Full-Time</span>
+                <span class="role-tag">Base + Commission</span>
+                <span class="role-tag hi">Sales Skills Required</span>
+                <span class="role-tag hi">Auto Knowledge = Big Advantage</span>
+              </div>
+            </div>
+            <div class="role-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+
+          <a class="role-card fade-in" href="mailto:autoelevatemarketing@gmail.com?subject=Application — Appointment Setter" role="listitem">
+            <div>
+              <div class="role-dept">Business Development</div>
+              <div class="role-name">Appointment Setter</div>
+              <p class="role-desc">You'll reach out to auto styling businesses across the UK — window tinters, wrappers, detailers, ambient lighting specialists — and book strategy calls for our sales team. This is how Auto Elevate grows its own client base. You're the first impression we make.</p>
+              <p class="role-needs">
+                <strong>Must have:</strong> Confident communicator, persistent without being pushy, comfortable with outbound outreach (DMs, email, calls), able to build rapport quickly.<br>
+                <strong>Big plus:</strong> You're already active in the UK car scene — you follow the shops, you're in the communities, maybe you've had your own car done. Knowing what makes a great tint shop or wrap installer tick means your outreach lands completely differently.
+              </p>
+              <div class="role-tags">
+                <span class="role-tag hi">Remote</span>
+                <span class="role-tag">Part-Time / Full-Time</span>
+                <span class="role-tag">Commission Per Booked Call</span>
+                <span class="role-tag hi">Car Scene Knowledge Helps</span>
+              </div>
+            </div>
+            <div class="role-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PERKS
+    ══════════════════════════════ -->
+    <section class="section section-dark" aria-labelledby="perks-heading">
+      <div class="container">
+        <span class="section-tag fade-in">What You Get</span>
+        <h2 class="section-title fade-in" id="perks-heading">The perks of building with us.</h2>
+        <p class="section-sub fade-in" style="margin-bottom: 48px;">No corporate noise. Here's what working at Auto Elevate actually looks like day to day.</p>
+        <div class="perks-grid">
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="perk-title">Performance Pay</div>
+            <p class="perk-body">Drive results, earn more. We reward output, not hours. If you close, convert, or scale — you feel it in your pay.</p>
+          </div>
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="perk-title">Full Remote</div>
+            <p class="perk-body">Work from home, a coffee shop, a garage. Wherever you operate best. We're remote-first and always will be.</p>
+          </div>
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="perk-title">A Niche You Love</div>
+            <p class="perk-body">Cars — not insurance, not SaaS, not fintech. If you're a car person, you'll spend your days talking about things you already care about.</p>
+          </div>
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="perk-title">Fast Growth</div>
+            <p class="perk-body">We're scaling. People who perform here don't stay in a box. Your role expands quickly as the agency grows.</p>
+          </div>
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="perk-title">No Corporate BS</div>
+            <p class="perk-body">Small team, direct communication, fast decisions. No 12-person approval chains. If you have an idea, say it.</p>
+          </div>
+
+          <div class="perk-card fade-in">
+            <div class="perk-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="perk-title">Real Impact</div>
+            <p class="perk-body">You'll see the businesses you help — real shops, real owners, real revenue. You'll hear when a client hits a record month.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         VALUES
+    ══════════════════════════════ -->
+    <section class="section" aria-labelledby="values-heading">
+      <div class="container">
+        <span class="section-tag fade-in">How We Operate</span>
+        <h2 class="section-title fade-in" id="values-heading">What gets rewarded here.</h2>
+        <div class="values-grid">
+          <div class="value-card fade-in">
+            <div class="value-num">01</div>
+            <div class="value-title">Results, Not Hours</div>
+            <p class="value-body">We don't care when you work. We care what you produce. Output is the only currency.</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-num">02</div>
+            <div class="value-title">Speak Like a Human</div>
+            <p class="value-body">Scripts don't close deals. Genuine conversation does. We want people who can talk, not recite.</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-num">03</div>
+            <div class="value-title">Know Your Stuff</div>
+            <p class="value-body">The more you understand the automotive world, the better you'll perform. Always be learning.</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-num">04</div>
+            <div class="value-title">Own It</div>
+            <p class="value-body">No hand-holding. If it's your role, it's your responsibility. Take ownership and run with it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PROCESS
+    ══════════════════════════════ -->
+    <section class="section section-dark" aria-labelledby="process-heading">
+      <div class="container">
+        <span class="section-tag fade-in">How to Apply</span>
+        <h2 class="section-title fade-in" id="process-heading">Four steps. That's it.</h2>
+        <p class="section-sub fade-in" style="margin-bottom: 0;">We keep hiring fast and straightforward. No weeks of silence, no 8-stage processes. We respect your time.</p>
+        <div class="process-grid">
+          <div class="process-step fade-in">
+            <div class="step-num">01</div>
+            <div class="step-title">Apply</div>
+            <p class="step-body">Hit apply on the role you want. Send your CV plus 2&#8211;3 lines on why you're the right person. Keep it real — no essays needed.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-num">02</div>
+            <div class="step-title">Quick Call</div>
+            <p class="step-body">A 20-minute intro call. We'll chat, you should ask questions too. Two-way conversation, not an interrogation.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-num">03</div>
+            <div class="step-title">Paid Task</div>
+            <p class="step-body">A short, paid task relevant to the role. This is where you show how you actually think and work.</p>
+          </div>
+          <div class="process-step fade-in">
+            <div class="step-num">04</div>
+            <div class="step-title">Start</div>
+            <p class="step-body">If we're both a yes, we move fast. Offer made, start date agreed. Welcome to the team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CTA
+    ══════════════════════════════ -->
+    <div class="careers-cta">
+      <h2>If you're a car person who wants to win — this is your call.</h2>
+      <p>Don't overthink it. Tell us which role caught your eye and why you'd be great at it.</p>
+      <div class="cta-btns">
+        <a href="mailto:autoelevatemarketing@gmail.com?subject=Job Application — Auto Elevate Marketing" class="btn-primary">Apply Now</a>
+        <a href="index.html" class="btn-outline">Back to Main Site</a>
+      </div>
+      <small>Or call us: <a href="tel:+447984164704">07984 164704</a></small>
+    </div>
+
+  </main>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">Auto Elevate <span>Marketing</span></div>
+          <p>Helping UK auto styling businesses scale through proven Meta advertising strategies and automated lead systems.</p>
+          <p class="footer-contact">Email: <a href="mailto:autoelevatemarketing@gmail.com">autoelevatemarketing@gmail.com</a></p>
+          <p class="footer-contact">Phone: <a href="tel:+447984164704">07984 164704</a></p>
+          <p class="footer-contact">Sales (UK): <a href="tel:+447488894398">+44 7488 894398</a></p>
+          <p class="footer-contact">Sales (US): <a href="tel:+18445152356">(844) 515-2356</a></p>
+        </div>
+
+        <nav class="footer-col" aria-label="Services navigation">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="index.html#services">Meta Ads Management</a></li>
+            <li><a href="index.html#services">Google SEO</a></li>
+            <li><a href="index.html#services">Lead Follow-Up Systems</a></li>
+            <li><a href="index.html#services">Website Design</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company navigation">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="index.html#results">Case Studies</a></li>
+            <li><a href="index.html#who-we-help">Who We Help</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="https://api.leadconnectorhq.com/widget/bookings/autoelevatemarketing26dd50f6-abcb-43e1-90ae-5adf391b5b48/strategy-session-eec80b29-5880-4553-b8fc-c4c3367d4502" target="_blank" rel="noopener noreferrer">Book a Call</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Our brands">
+          <h5>Our Brands</h5>
+          <ul>
+            <li><a href="index.html">&#8627; Auto Elevate Marketing</a></li>
+            <li><a href="services.html">&#8627; Auto Elevate Websites</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 All rights reserved. AUTO ELEVATE MARKETING LTD.</p>
+        <p style="font-size:0.75rem;color:rgba(255,255,255,0.2)">Specialists in Meta Ads for UK Auto Styling Businesses</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ── -->
+  <script>
+    // ── Fade-in observer ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+      setTimeout(() => { el.classList.add('visible'); }, 800);
+    });
+
+    // ── Mobile hamburger ──
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Nav brand switcher ──
+    const switcherBtn = document.getElementById('switcher-btn');
+    const switcherDropdown = document.getElementById('switcher-dropdown');
+    switcherBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = switcherDropdown.classList.toggle('open');
+      switcherBtn.classList.toggle('open', isOpen);
+      switcherBtn.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', (e) => {
+      if (!switcherBtn.contains(e.target) && !switcherDropdown.contains(e.target)) {
+        switcherDropdown.classList.remove('open');
+        switcherBtn.classList.remove('open');
+        switcherBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+
+</body>
+</html>
