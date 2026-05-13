@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -442,6 +443,15 @@
     }
 
     .careers-cta small a { color: var(--accent-light); }
+
+    /* ── FORCE DARK BODY ── */
+    body { background: #0a0a0a !important; color: #F4F1EC !important; }
+
+    /* Override any light section styles from styles.css */
+    .section { background: #0a0a0a; }
+    .section-title { color: #F4F1EC !important; }
+    .section-sub { color: rgba(244,241,236,0.55) !important; }
+    .section-tag { color: var(--accent) !important; }
 
     /* ── SECTION DARK ── */
     .section-dark { background: #0d0d0d; }
