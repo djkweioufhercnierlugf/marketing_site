@@ -49,6 +49,15 @@
   <style>
     .fade-in { opacity: 1 !important; transform: none !important; visibility: visible !important; }
 
+    /* Results grid responsive */
+    @media (max-width: 1100px) {
+      .results-row-4 { grid-template-columns: repeat(2, 1fr) !important; }
+      .results-row-3 { grid-template-columns: repeat(2, 1fr) !important; max-width: 100% !important; }
+    }
+    @media (max-width: 640px) {
+      .results-row-4, .results-row-3 { grid-template-columns: 1fr !important; max-width: 100% !important; }
+    }
+
     @media (max-width: 768px) {
       #ecom > div > div { grid-template-columns: 1fr !important; gap: 40px !important; }
       /* Website upsell section — fix grid and feature boxes on mobile */
@@ -404,7 +413,8 @@
         <h2 class="section-title" id="results-heading">Real numbers from real businesses.</h2>
         <p class="section-sub">Every result below is from a UK auto styling business we work with directly.</p>
 
-        <div class="results-grid">
+        <!-- Row 1: 4 cards -->
+        <div class="results-row-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:24px;">
 
           <!-- DH Styling -->
           <article class="result-item fade-in" itemscope itemtype="https://schema.org/Review">
@@ -447,7 +457,7 @@
           </article>
 
           <!-- MQ Styling -->
-          <article class="result-item" itemscope itemtype="https://schema.org/Review">
+          <article class="result-item fade-in" itemscope itemtype="https://schema.org/Review">
             <meta itemprop="datePublished" content="2024-01-01">
             <div itemprop="author" itemscope itemtype="https://schema.org/Organization">
               <meta itemprop="name" content="MQ Styling">
@@ -465,6 +475,29 @@
               </div>
             </div>
           </article>
+
+          <!-- Lighting Customise — Coming Soon -->
+          <article class="result-item fade-in" itemscope itemtype="https://schema.org/Review">
+            <div class="video-wrap video-coming-soon-wrap" aria-label="Lighting Customise testimonial coming soon">
+              <div class="video-coming-soon">
+                <span>COMING SOON</span>
+              </div>
+            </div>
+            <div class="result-body">
+              <span class="result-tag">Automotive Lighting</span>
+              <h3>Lighting Customise Expansion!</h3>
+              <p class="result-desc">We help Lighting Customise generate a consistent flow of high-quality leads through targeted Meta Ads and our proven lead systems.</p>
+              <div class="result-numbers">
+                <div><div class="result-num">3x</div><div class="result-num-label">Lead Volume</div></div>
+                <div><div class="result-num">£6–9K</div><div class="result-num-label">Added Monthly</div></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Row 2: 3 cards centered -->
+        <div class="results-row-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:calc(75% + 16px);margin:0 auto;">
 
           <!-- BMT Customs — Coming Soon -->
           <article class="result-item fade-in" itemscope itemtype="https://schema.org/Review">
@@ -522,7 +555,8 @@
             </div>
           </article>
 
-        </div>
+        </div><!-- end row 2 -->
+
       </div>
     </section>
 
